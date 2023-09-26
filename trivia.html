@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <!--Bootstrap script-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-image: url(https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1635&q=80);
+        background-size: 25%;
+;
+    }
+</style>
+<audio autoplay src="sounds/sound1.mp3" type="audio">
+    Your browser does not support the audio element
+</audio>
+
+<body>
+    <div class="col-sm-4 col-md-8 container-fluid position-absolute start-50 top-50 text-center translate-middle">
+        <h1 class="text-sucess text-center text-white">Trivia Game</h1>
+        <div class="form-control text-bg-primary p-3 " id="question">Click "New Question" to start the game</div>
+        <input class="form-control text-bg-warning text-center" id="answer" type="text" placeholder="Your Answer Here">
+        <button class="form-control text-bg-secondary" id="questionBtn">New Question</button>
+        <button  class="form-control text-bg-secondary" id="answerBtn">Submit Answer</button>
+        <div id="feedback"></div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/trivia.js"></script>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
